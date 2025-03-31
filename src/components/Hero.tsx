@@ -41,10 +41,11 @@ const Hero = () => {
             <div className="relative w-[280px] h-[280px] md:w-[380px] md:h-[380px] rounded-full bg-gradient-to-br from-purple-900/20 to-indigo-900/30 flex items-center justify-center">
               <div className="absolute inset-0 rounded-full blur-2xl bg-gradient-to-r from-purple-500/20 to-indigo-500/20"></div>
               <div className="w-[260px] h-[260px] md:w-[360px] md:h-[360px] rounded-full bg-card border border-white/10 flex items-center justify-center overflow-hidden">
-                <div className="text-center p-8">
-                  <span className="block text-4xl md:text-6xl font-rajdhani font-bold bg-gradient-to-r from-purple-500 to-violet-500 bg-clip-text text-transparent">PJM</span>
-                  <span className="block mt-2 text-lg text-white/80">Grade 10 Student</span>
-                </div>
+                <img 
+                  src="/lovable-uploads/183422a8-12bd-4b46-a96d-04d171bf9a58.png" 
+                  alt="Patrick Josh Musni" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
