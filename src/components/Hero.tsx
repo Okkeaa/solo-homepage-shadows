@@ -42,7 +42,7 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-full blur-2xl bg-gradient-to-r from-purple-500/20 to-indigo-500/20"></div>
               <div className="w-[260px] h-[260px] md:w-[360px] md:h-[360px] rounded-full bg-card border border-white/10 flex items-center justify-center overflow-hidden">
                 <img 
-                  src="/lovable-uploads/183422a8-12bd-4b46-a96d-04d171bf9a58.png" 
+                  src="../../public/lovable-uploads/183422a8-12bd-4b46-a96d-04d171bf9a58.png" 
                   alt="Patrick Josh Musni" 
                   className="w-full h-full object-cover"
                 />
