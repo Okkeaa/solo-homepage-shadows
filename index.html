@@ -1,26 +1,538 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>solo-homepage-shadows</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <meta property="og:title" content="Lovable Generated Project" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <title>Patrick Josh Musni - Portfolio</title>
+    <meta name="description" content="Personal portfolio of Patrick Josh Musni" />
+    <meta name="author" content="Patrick Josh Musni" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <a href="#" class="logo">
+            <span class="text-white">Patrick</span>
+            <span class="gradient-text"> Musni</span>
+          </a>
+          
+          <div class="nav-menu">
+            <a href="#home" class="nav-item active">Home</a>
+            <a href="#profile" class="nav-item">Profile</a>
+            <a href="#hobbies" class="nav-item">Hobbies</a>
+            <a href="#skills" class="nav-item">Skills</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#contact" class="nav-item">Contact</a>
+          </div>
+          
+          <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Mobile Menu -->
+      <div class="mobile-menu hidden">
+        <a href="#home" class="mobile-nav-item">Home</a>
+        <a href="#profile" class="mobile-nav-item">Profile</a>
+        <a href="#hobbies" class="mobile-nav-item">Hobbies</a>
+        <a href="#skills" class="mobile-nav-item">Skills</a>
+        <a href="#about" class="mobile-nav-item">About</a>
+        <a href="#contact" class="mobile-nav-item">Contact</a>
+      </div>
+      
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h4 class="subtitle animate-fadeIn">Welcome to my profile</h4>
+              <h1 class="title animate-fadeIn">
+                I'm <span class="gradient-text">Patrick Josh</span> Musni
+              </h1>
+              <p class="description animate-fadeIn">
+                Student at San Beda College Alabang, aspiring developer, and digital artist.
+              </p>
+              <div class="cta-wrapper animate-fadeIn">
+                <a href="#contact" class="btn-contact">Contact Me</a>
+              </div>
+            </div>
+            
+            <div class="hero-image animate-fadeIn">
+              <div class="profile-circle-outer">
+                <div class="profile-circle-glow"></div>
+                <div class="profile-circle-inner">
+                  <img 
+                    src="lovable-uploads/183422a8-12bd-4b46-a96d-04d171bf9a58.png" 
+                    alt="Patrick Josh Musni" 
+                    class="profile-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="scroll-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Profile Section -->
+      <section id="profile" class="section bg-dark">
+        <div class="container">
+          <h2 class="section-title">Personal Profile</h2>
+          
+          <div class="profile-content">
+            <div class="profile-grid">
+              <div class="stat-card">
+                <div class="stat-icon">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </div>
+                <div class="stat-content">
+                  <h3>Birthdate</h3>
+                  <p>June 14, 2009</p>
+                  <div class="stat-additional">14 years old</div>
+                </div>
+              </div>
+              
+              <div class="stat-card">
+                <div class="stat-icon">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 17h2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"></path>
+                    <path d="M13 19h6v2H5v-2h6"></path>
+                    <path d="M12 4v9"></path>
+                    <path d="M8 7l4-3 4 3"></path>
+                  </svg>
+                </div>
+                <div class="stat-content">
+                  <h3>Height</h3>
+                  <p>170 cm</p>
+                  <div class="stat-additional">5'7"</div>
+                </div>
+              </div>
+              
+              <div class="stat-card">
+                <div class="stat-icon">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c0 2 1 3 6 3s6-1 6-3v-5"></path>
+                  </svg>
+                </div>
+                <div class="stat-content">
+                  <h3>Education</h3>
+                  <p>Grade 10</p>
+                  <div class="stat-additional">San Beda College Alabang</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="profile-bio">
+              <h3>About Me</h3>
+              <p>
+                I'm a Grade 10 student at San Beda College Alabang with a passion for coding and digital art. When I'm not studying, you can find me gaming, drawing, or catching up on sleep. I'm constantly developing my skills and looking forward to growing in the tech and creative fields.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Hobbies Section -->
+      <section id="hobbies" class="section">
+        <div class="container">
+          <h2 class="section-title">My Hobbies</h2>
+          
+          <div class="hobbies-grid">
+            <div class="hobby-card">
+              <div class="hobby-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="6" y1="11" x2="10" y2="11"></line>
+                  <line x1="8" y1="9" x2="8" y2="13"></line>
+                  <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                  <path d="M18 16V9"></path>
+                  <path d="M22 12h-4"></path>
+                </svg>
+              </div>
+              <h3 class="hobby-title">Playing Video Games</h3>
+              <p class="hobby-description">
+                I enjoy immersing myself in different game worlds, especially RPGs and strategy games that challenge my mind.
+              </p>
+            </div>
+            
+            <div class="hobby-card">
+              <div class="hobby-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="hobby-title">Drawing</h3>
+              <p class="hobby-description">
+                Digital art allows me to express my creativity and bring my imagination to life through illustrations and character designs.
+              </p>
+            </div>
+            
+            <div class="hobby-card">
+              <div class="hobby-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3a9 9 0 1 0 9 9"></path>
+                  <path d="M12 3v6l4-3"></path>
+                </svg>
+              </div>
+              <h3 class="hobby-title">Sleeping</h3>
+              <p class="hobby-description">
+                A good rest recharges my creativity and helps me stay focused on my studies and projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Skills Section -->
+      <section id="skills" class="section bg-dark">
+        <div class="container">
+          <h2 class="section-title">My Skills</h2>
+          
+          <div class="skills-content">
+            <div class="skills-grid">
+              <div>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Coding</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="85%"></div>
+                  </div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Drawing</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="75%"></div>
+                  </div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Playing Games</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="90%"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Adaptability</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="80%"></div>
+                  </div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Fast Learner</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="85%"></div>
+                  </div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Creativity</span>
+                    <span class="skill-percent">78%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="78%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skills-description">
+              <h3>Development Journey</h3>
+              <p>
+                I've been developing my skills through both formal education and self-learning. I'm constantly exploring new technologies and techniques to improve my abilities in coding and design. My goal is to continue growing these skills and eventually specialize in web and game development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          
+          <div class="about-content">
+            <div class="about-cards">
+              <div class="about-card">
+                <div class="about-icon">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <h3>Who I Am</h3>
+                <p>
+                  A Grade 10 student at San Beda College Alabang with a passion for technology and art. I balance academics with creative pursuits and gaming.
+                </p>
+              </div>
+              
+              <div class="about-card">
+                <div class="about-icon">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                  </svg>
+                </div>
+                <h3>My Goals</h3>
+                <p>
+                  I aim to become proficient in software development and digital art, with aspirations to combine these skills in a future career in tech or game development.
+                </p>
+              </div>
+              
+              <div class="about-card">
+                <div class="about-icon">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </div>
+                <h3>My Passion</h3>
+                <p>
+                  I'm driven by creating digital experiences that bring joy and solve problems. I love the process of turning ideas into reality through code and design.
+                </p>
+              </div>
+            </div>
+            
+            <div class="about-journey">
+              <h3>My Journey</h3>
+              <p>
+                My journey began with a curiosity about how games and websites work. This led me to explore coding and digital art, which quickly became my main interests outside of school.
+              </p>
+              <p>
+                At San Beda College Alabang, I've been able to develop both my academic knowledge and technical skills. The school's emphasis on holistic education has helped me grow not just intellectually, but also personally.
+              </p>
+              <p>
+                As I continue my education, I'm focused on gaining more experience in programming languages and design tools. I believe that combining technical skills with creativity will open up exciting opportunities in the future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Contact Section -->
+      <section id="contact" class="section bg-dark">
+        <div class="container">
+          <h2 class="section-title">Contact Me</h2>
+          
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Get In Touch</h3>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-detail">
+                  <h4>Phone</h4>
+                  <p>0976 085 9720</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-detail">
+                  <h4>Email</h4>
+                  <p>patrick.musni@example.com</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-detail">
+                  <h4>School</h4>
+                  <p>San Beda College Alabang</p>
+                  <div class="location-detail">Alabang, Muntinlupa City</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="contact-form">
+              <h3>Send Message</h3>
+              
+              <form>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" placeholder="Your Name" />
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="Your Email" />
+                </div>
+                
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-contact">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <span class="font-bold">
+                <span class="text-white">Patrick</span>
+                <span class="gradient-text"> Musni</span>
+              </span>
+            </div>
+            
+            <div class="copyright">
+              &copy; 2023 Patrick Josh C. Musni. All rights reserved.
+            </div>
+            
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      
+      mobileMenuBtn.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('open');
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 64, // Adjusted for navbar height
+              behavior: 'smooth'
+            });
+            
+            // Close mobile menu if open
+            if (mobileMenu.classList.contains('open')) {
+              mobileMenu.classList.add('hidden');
+              mobileMenu.classList.remove('open');
+            }
+          }
+        });
+      });
+      
+      // Add animation delay to fade-in elements
+      const fadeInElements = document.querySelectorAll('.animate-fadeIn');
+      fadeInElements.forEach((element, index) => {
+        element.style.animationDelay = `${index * 0.2}s`;
+      });
+      
+      // Animate skill bars
+      const animateSkills = () => {
+        const skillSection = document.getElementById('skills');
+        const skillBars = document.querySelectorAll('.skill-progress');
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              skillBars.forEach(bar => {
+                const width = bar.getAttribute('data-width');
+                bar.style.width = width;
+              });
+              
+              observer.unobserve(skillSection);
+            }
+          });
+        }, { threshold: 0.2 });
+        
+        observer.observe(skillSection);
+      };
+      
+      // Initialize animations
+      document.addEventListener('DOMContentLoaded', function() {
+        animateSkills();
+      });
+    </script>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
