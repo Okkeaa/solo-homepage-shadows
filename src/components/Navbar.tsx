@@ -1,19 +1,14 @@
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
-  const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
-  const scrollToSection = (sectionId: string) => {
-    setActiveSection(sectionId);
-    setIsMobileMenuOpen(false);
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
+  const isActive = (path: string) => {
+    return location.pathname === path;
   };
 
   return (
@@ -27,42 +22,42 @@ const Navbar = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-1">
-            <button 
-              onClick={() => scrollToSection('home')} 
-              className={`nav-item ${activeSection === 'home' ? 'active' : ''}`}
+            <Link 
+              to="/" 
+              className={`nav-item ${isActive('/') ? 'active' : ''}`}
             >
               Home
-            </button>
-            <button 
-              onClick={() => scrollToSection('profile')} 
-              className={`nav-item ${activeSection === 'profile' ? 'active' : ''}`}
+            </Link>
+            <Link 
+              to="/profile" 
+              className={`nav-item ${isActive('/profile') ? 'active' : ''}`}
             >
               Profile
-            </button>
-            <button 
-              onClick={() => scrollToSection('hobbies')} 
-              className={`nav-item ${activeSection === 'hobbies' ? 'active' : ''}`}
+            </Link>
+            <Link 
+              to="/hobbies" 
+              className={`nav-item ${isActive('/hobbies') ? 'active' : ''}`}
             >
               Hobbies
-            </button>
-            <button 
-              onClick={() => scrollToSection('skills')} 
-              className={`nav-item ${activeSection === 'skills' ? 'active' : ''}`}
+            </Link>
+            <Link 
+              to="/skills" 
+              className={`nav-item ${isActive('/skills') ? 'active' : ''}`}
             >
               Skills
-            </button>
-            <button 
-              onClick={() => scrollToSection('about')} 
-              className={`nav-item ${activeSection === 'about' ? 'active' : ''}`}
+            </Link>
+            <Link 
+              to="/about" 
+              className={`nav-item ${isActive('/about') ? 'active' : ''}`}
             >
               About
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')} 
-              className={`nav-item ${activeSection === 'contact' ? 'active' : ''}`}
+            </Link>
+            <Link 
+              to="/contact" 
+              className={`nav-item ${isActive('/contact') ? 'active' : ''}`}
             >
               Contact
-            </button>
+            </Link>
           </div>
           
           {/* Mobile Menu Button */}
@@ -82,42 +77,48 @@ const Navbar = () => {
       {/* Mobile Navigation Menu */}
       <div className={`mobile-menu ${isMobileMenuOpen ? 'open' : 'hidden'}`}>
         <div className="pt-20 pb-6">
-          <button 
-            onClick={() => scrollToSection('home')}
+          <Link 
+            to="/"
             className="mobile-nav-item"
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             Home
-          </button>
-          <button 
-            onClick={() => scrollToSection('profile')}
+          </Link>
+          <Link 
+            to="/profile"
             className="mobile-nav-item"
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             Profile
-          </button>
-          <button 
-            onClick={() => scrollToSection('hobbies')}
+          </Link>
+          <Link 
+            to="/hobbies"
             className="mobile-nav-item"
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             Hobbies
-          </button>
-          <button 
-            onClick={() => scrollToSection('skills')}
+          </Link>
+          <Link 
+            to="/skills"
             className="mobile-nav-item"
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             Skills
-          </button>
-          <button 
-            onClick={() => scrollToSection('about')}
+          </Link>
+          <Link 
+            to="/about"
             className="mobile-nav-item"
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             About
-          </button>
-          <button 
-            onClick={() => scrollToSection('contact')}
+          </Link>
+          <Link 
+            to="/contact"
             className="mobile-nav-item"
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             Contact
-          </button>
+          </Link>
         </div>
       </div>
     </>
