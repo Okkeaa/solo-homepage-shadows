@@ -41,12 +41,6 @@ const Navbar = () => {
               Hobbies
             </Link>
             <Link 
-              to="/skills" 
-              className={`nav-item ${isActive('/skills') ? 'active' : ''}`}
-            >
-              Skills
-            </Link>
-            <Link 
               to="/about" 
               className={`nav-item ${isActive('/about') ? 'active' : ''}`}
             >
@@ -97,13 +91,6 @@ const Navbar = () => {
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Hobbies
-          </Link>
-          <Link 
-            to="/skills"
-            className="mobile-nav-item"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Skills
           </Link>
           <Link 
             to="/about"

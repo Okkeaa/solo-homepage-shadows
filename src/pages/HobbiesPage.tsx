@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 
 const HobbiesPage = () => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Helmet>
         <title>Hobbies - Patrick Josh Musni</title>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -15,13 +15,13 @@ const HobbiesPage = () => {
       </Helmet>
       
       <Navbar />
-      <div className="pt-16 min-h-screen">
-        <div className="container mx-auto px-4 py-16">
+      <main className="flex-grow pt-16">
+        <div className="container mx-auto px-4 py-8">
           <Hobbies />
         </div>
-      </div>
+      </main>
       <Footer />
-    </>
+    </div>
   );
 };
 
